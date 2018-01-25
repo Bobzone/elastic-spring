@@ -7,10 +7,9 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
 
 import java.util.List;
 
-interface CarRepository extends ElasticsearchRepository<Car, Long> {
+public interface CarRepository extends ElasticsearchRepository<Car, Long> {
 
     Page<Car> findByBrand(String brand, Pageable pageable);
 
     List<Car> findByModel(String model);
-    
 }
