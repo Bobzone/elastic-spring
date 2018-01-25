@@ -9,6 +9,8 @@ import java.util.List;
 
 public interface CarRepository extends ElasticsearchRepository<Car, String> {
 
+    Car findOne(String id);
+
     Page<Car> findByBrand(String brand, Pageable pageable);
 
     List<Car> findByModel(String model);

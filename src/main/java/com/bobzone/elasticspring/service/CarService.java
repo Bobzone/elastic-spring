@@ -7,4 +7,6 @@ interface CarService {
     Car addCar(Car car);
 
     void deleteCar(Car car);
+
+    Car findById(final String id);
 }
