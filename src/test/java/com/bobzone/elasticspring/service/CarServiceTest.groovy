@@ -1,17 +1,13 @@
 package com.bobzone.elasticspring.service
 
-import com.bobzone.elasticspring.ElasticSpringApplication
 import com.bobzone.elasticspring.domain.Car
-import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.test.context.junit4.SpringRunner
 import spock.lang.Specification
 import spock.lang.Unroll
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = ElasticSpringApplication.class)
-class CarServiceTest extends Specification {
+@SpringBootTest
+public class CarServiceTest extends Specification {
 
     @Autowired
     CarService service;
