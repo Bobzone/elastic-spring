@@ -7,4 +7,5 @@ cache:
   - $HOME/.m2
 before_install:
   - chmod +x mvnw
-script: mvn clean install
+script:
+  - sudo mvn clean install
