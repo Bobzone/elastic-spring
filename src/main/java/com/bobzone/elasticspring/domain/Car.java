@@ -7,7 +7,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 public class Car {
 
     @Id
-    private Long id;
+    private String id;
 
     private final String brand;
 
@@ -17,7 +17,7 @@ public class Car {
 
     private final long mileage;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
