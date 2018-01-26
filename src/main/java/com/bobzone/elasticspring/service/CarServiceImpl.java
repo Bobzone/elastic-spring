@@ -31,6 +31,11 @@ class CarServiceImpl implements CarService {
         repository.delete(car);
     }
 
+    @Override
+    public Car findById(final String id) {
+        return repository.findOne(id);
+    }
+
     public Page<Car> findByBrand(final String brand, final Pageable pageable) {
         return repository.findByBrand(brand, pageable);
     }
@@ -38,4 +43,6 @@ class CarServiceImpl implements CarService {
     public List<Car> findByModel(final String model) {
         return repository.findByModel(model);
     }
+
+
 }

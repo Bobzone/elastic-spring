@@ -9,13 +9,13 @@ public class Car {
     @Id
     private String id;
 
-    private final String brand;
+    private String brand;
 
-    private final String model;
+    private String model;
 
-    private final int productionYear;
+    private int productionYear;
 
-    private final long mileage;
+    private long mileage;
 
     public String getId() {
         return id;
@@ -47,6 +47,9 @@ public class Car {
         sb.append(", mileage=").append(mileage);
         sb.append('}');
         return sb.toString();
+    }
+
+    public Car() {
     }
 
     private Car(CarBuilder builder) {
