@@ -7,7 +7,7 @@ import org.springframework.data.elasticsearch.core.ElasticsearchTemplate
 import spock.lang.Specification
 import spock.lang.Unroll
 
-@SpringBootTest()
+@SpringBootTest
 public class CarServiceTest extends Specification {
 
     @Autowired
