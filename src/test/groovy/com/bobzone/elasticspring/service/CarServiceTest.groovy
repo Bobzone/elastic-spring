@@ -1,5 +1,6 @@
 package com.bobzone.elasticspring.service
 
+import com.bobzone.elasticspring.ElasticSpringApplication
 import com.bobzone.elasticspring.domain.Car
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
@@ -7,7 +8,7 @@ import org.springframework.data.elasticsearch.core.ElasticsearchTemplate
 import spock.lang.Specification
 import spock.lang.Unroll
 
-@SpringBootTest
+@SpringBootTest(classes = ElasticSpringApplication.class)
 public class CarServiceTest extends Specification {
 
     @Autowired
