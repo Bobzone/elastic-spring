@@ -8,4 +8,4 @@ cache:
 before_install:
   - chmod +x mvnw
 script:
-  - sudo mvn clean install
+  - mvn clean install
