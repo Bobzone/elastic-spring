@@ -1,7 +1,7 @@
 # Elastic-Spring
 
 ## Issues / notes during development
-1. Finally managed to establish connection between java app and docker container. Unfortunately elastic in docker throws IllegalArg exception with version incompability information. This is related to elasticsearch-spring version compatibility matrix, which I wasn't aware of before. The matrix is available on the internet somewhere. In the end I decided to dump the up-to-date docker container in favor of slightly older 2.4.6 container.
+1. Finally managed to establish connection between java app and docker container. Unfortunately elastic in docker throws IllegalArg exception with version incompability information. This is related to elasticsearch-spring [version compatibility matrix](https://github.com/spring-projects/spring-data-elasticsearch/wiki/Spring-Data-Elasticsearch---Spring-Boot---version-matrix).  In the end I decided to dump the up-to-date docker container in favor of slightly older 2.4.6 container.
 
 ## Important settings for the project
 Right now to run the project you have to use (for me):
