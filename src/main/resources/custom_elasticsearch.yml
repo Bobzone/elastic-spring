@@ -1,5 +1,5 @@
-discovery.type: "single-node"
-cluster.name: "cars-cluster"
+#discovery.type: "single-node"
 bootstrap.memory_lock: true
+cluster.name: "cars-cluster"
 http.host: 0.0.0.0
-transport.host: 127.0.0.1
+transport.host: 0.0.0.0

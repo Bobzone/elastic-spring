@@ -32,6 +32,7 @@ public class ElasticsearchConfig {
 
         Settings settings = Settings.settingsBuilder()
                 .put("cluster.name", clusterName)
+                .put("client.transport.sniff", false)
                 .build();
 
         return new TransportClient.Builder()
