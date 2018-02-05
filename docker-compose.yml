@@ -2,12 +2,12 @@ version: '3'
 services:
   web:
     build: .
-    links:
+    depends_on:
       - elasticsearch
   elasticsearch:
     image: elasticsearch:2.4.6
     volumes:
-      - "/src/main/resources/custom_elasticsearch.yml:/usr/share/elasticearch/config/elasticsearch.yml"
+      - "./src/main/resources/custom_elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
     expose:
       - "9200"
       - "9300"
